@@ -22,4 +22,10 @@
         Form1.Close()
 
     End Sub
+
+    Private Sub HeavenTopControl1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HeavenTopControl1.Click
+        End
+        Form1.Close()
+
+    End Sub
 End Class
