@@ -31,7 +31,15 @@ Public Class Form1
         Timer1.Start()
         Downloader.RunWorkerAsync()
     End Sub
+    Private Sub Settings_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
 
+        Me.CenterToScreen()
+
+        'or you can use 
+
+        Me.CenterToParent()
+
+    End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         Dim amount As Integer
@@ -45,7 +53,9 @@ Public Class Form1
     End Sub
 
     Private Sub Downloader_RunWorkerCompleted(ByVal sender As Object, ByVal e As System.ComponentModel.RunWorkerCompletedEventArgs) Handles Downloader.RunWorkerCompleted
-        MsgBox("Done!!")
+        Me.Hide()
+        Home.Show()
+
     End Sub
 
     Private Sub FormSkin1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -53,6 +63,10 @@ Public Class Form1
     End Sub
 
     Private Sub ProgressBar1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub FormSkin1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FormSkin1.Click
 
     End Sub
 End Class
