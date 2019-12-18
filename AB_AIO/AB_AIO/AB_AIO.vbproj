@@ -97,9 +97,6 @@
     <Compile Include="theme1.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="theme2.vb">
-      <SubType>Component</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
