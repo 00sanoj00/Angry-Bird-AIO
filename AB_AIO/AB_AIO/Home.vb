@@ -5,7 +5,7 @@
     End Sub
 
     Private Sub Home_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Panel1.BackgroundImage = Image.FromFile(dataDirectory)
+        'Panel1.BackgroundImage = Image.FromFile(dataDirectory)
     End Sub
     Private Sub Settings_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
         Me.CenterToScreen()
@@ -15,11 +15,9 @@
         Me.CenterToParent()
     End Sub
 
-    Private Sub ElTheme1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ElTheme1.Click
 
-    End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         End
         Form1.Close()
 
