@@ -24,12 +24,15 @@ Partial Class Home
     Private Sub InitializeComponent()
         Me.ElTheme1 = New AB_AIO.ElTheme
         Me.Button1 = New AB_AIO.Button
+        Me.Panel1 = New System.Windows.Forms.Panel
         Me.ElTheme1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ElTheme1
         '
         Me.ElTheme1.BackColor = System.Drawing.Color.White
+        Me.ElTheme1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ElTheme1.Controls.Add(Me.Panel1)
         Me.ElTheme1.Controls.Add(Me.Button1)
         Me.ElTheme1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ElTheme1.Font = New System.Drawing.Font("Tahoma", 9.0!)
@@ -39,7 +42,7 @@ Partial Class Home
         Me.ElTheme1.Resizable = True
         Me.ElTheme1.Size = New System.Drawing.Size(992, 721)
         Me.ElTheme1.TabIndex = 0
-        Me.ElTheme1.Text = "ElTheme1"
+        Me.ElTheme1.Text = "Angry-Bird-AIO"
         '
         'Button1
         '
@@ -58,6 +61,13 @@ Partial Class Home
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "X"
         '
+        'Panel1
+        '
+        Me.Panel1.Location = New System.Drawing.Point(0, 38)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(991, 682)
+        Me.Panel1.TabIndex = 1
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -74,4 +84,5 @@ Partial Class Home
     End Sub
     Friend WithEvents ElTheme1 As AB_AIO.ElTheme
     Friend WithEvents Button1 As AB_AIO.Button
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
 End Class

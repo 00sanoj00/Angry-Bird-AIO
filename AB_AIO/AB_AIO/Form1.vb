@@ -5,7 +5,11 @@ Public Class Form1
     Public link As String
     Dim dataDirectory As String = String.Format("{0}\Wallpeper\w.jpg", Environment.CurrentDirectory)
     Private Sub Downloader_DoWork(ByVal sender As System.Object, ByVal e As System.ComponentModel.DoWorkEventArgs) Handles Downloader.DoWork
-        File.Delete(dataDirectory)
+        Try
+            File.Delete(dataDirectory)
+        Catch ex As Exception
+
+        End Try
         link = "https://raw.githubusercontent.com/00sanoj00/Angry-Bird-AIO/master/Screen/Mainscreen.jpg"
         Dim size As Integer
         Dim wr As WebRequest
