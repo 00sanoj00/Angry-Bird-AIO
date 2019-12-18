@@ -5,7 +5,8 @@
     End Sub
 
     Private Sub Home_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'Panel1.BackgroundImage = Image.FromFile(dataDirectory)
+        Panel1.BackgroundImage = Image.FromFile(dataDirectory)
+        Panel2.BackgroundImage = Image.FromFile(dataDirectory)
     End Sub
     Private Sub Settings_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
         Me.CenterToScreen()
@@ -23,9 +24,14 @@
 
     End Sub
 
-    Private Sub HeavenTopControl1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HeavenTopControl1.Click
+    Private Sub HeavenTopControl1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         End
         Form1.Close()
 
+    End Sub
+
+    Private Sub HeavenTopControl1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HeavenTopControl1.Click
+        End
+        Form1.Close()
     End Sub
 End Class

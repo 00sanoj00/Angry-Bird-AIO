@@ -23,6 +23,8 @@ Partial Class Home
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.HeavenTheme1 = New AB_AIO.HeavenTheme
+        Me.Panel2 = New System.Windows.Forms.Panel
+        Me.Panel1 = New System.Windows.Forms.Panel
         Me.HeavenTopControl1 = New AB_AIO.HeavenTopControl
         Me.HeavenTheme1.SuspendLayout()
         Me.SuspendLayout()
@@ -30,6 +32,8 @@ Partial Class Home
         'HeavenTheme1
         '
         Me.HeavenTheme1.BackColor = System.Drawing.Color.White
+        Me.HeavenTheme1.Controls.Add(Me.Panel2)
+        Me.HeavenTheme1.Controls.Add(Me.Panel1)
         Me.HeavenTheme1.Controls.Add(Me.HeavenTopControl1)
         Me.HeavenTheme1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.HeavenTheme1.Font = New System.Drawing.Font("Arial", 9.0!)
@@ -40,7 +44,21 @@ Partial Class Home
         Me.HeavenTheme1.SecondText = "Pro"
         Me.HeavenTheme1.Size = New System.Drawing.Size(992, 721)
         Me.HeavenTheme1.TabIndex = 0
-        Me.HeavenTheme1.Text = "HeavenTheme1"
+        Me.HeavenTheme1.Text = "Angry Bird All in One"
+        '
+        'Panel2
+        '
+        Me.Panel2.Location = New System.Drawing.Point(1, 1)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(990, 32)
+        Me.Panel2.TabIndex = 2
+        '
+        'Panel1
+        '
+        Me.Panel1.Location = New System.Drawing.Point(0, 89)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(992, 632)
+        Me.Panel1.TabIndex = 1
         '
         'HeavenTopControl1
         '
@@ -70,5 +88,7 @@ Partial Class Home
     End Sub
     Friend WithEvents HeavenTheme1 As AB_AIO.HeavenTheme
     Friend WithEvents HeavenTopControl1 As AB_AIO.HeavenTopControl
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
 
 End Class
