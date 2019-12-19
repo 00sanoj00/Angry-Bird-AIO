@@ -22,39 +22,39 @@ Partial Class Home
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Panel2 = New System.Windows.Forms.Panel
-        Me.Panel1 = New System.Windows.Forms.Panel
+        Me.PeForm1 = New ANgry7.PEForm()
         Me.SuspendLayout()
         '
-        'Panel2
+        'PeForm1
         '
-        Me.Panel2.Location = New System.Drawing.Point(1, 1)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(990, 32)
-        Me.Panel2.TabIndex = 2
-        '
-        'Panel1
-        '
-        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.Location = New System.Drawing.Point(0, 89)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(992, 632)
-        Me.Panel1.TabIndex = 1
+        Me.PeForm1.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.PeForm1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PeForm1.Font = New System.Drawing.Font("Segoe UI Semibold", 35.0!)
+        Me.PeForm1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(160, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.PeForm1.Location = New System.Drawing.Point(0, 0)
+        Me.PeForm1.MinimumSize = New System.Drawing.Size(305, 150)
+        Me.PeForm1.Name = "PeForm1"
+        Me.PeForm1.Sizable = True
+        Me.PeForm1.Size = New System.Drawing.Size(768, 529)
+        Me.PeForm1.TabIndex = 0
+        Me.PeForm1.Text = "Angry Birds All in One"
+        Me.PeForm1.TextGradBottomScale = 1.0R
+        Me.PeForm1.TextGradTopScale = 1.0R
+        Me.PeForm1.TextYOffset = 0
         '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(936, 626)
+        Me.ClientSize = New System.Drawing.Size(768, 529)
+        Me.Controls.Add(Me.PeForm1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.MinimumSize = New System.Drawing.Size(305, 150)
         Me.Name = "Home"
         Me.Text = "Home"
         Me.TransparencyKey = System.Drawing.Color.Fuchsia
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
-
+    Friend WithEvents PeForm1 As ANgry7.PEForm
 End Class
