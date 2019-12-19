@@ -22,12 +22,16 @@ Partial Class Home
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Home))
         Me.PeForm1 = New ANgry7.PEForm()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PeForm1.SuspendLayout()
         Me.SuspendLayout()
         '
         'PeForm1
         '
         Me.PeForm1.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.PeForm1.Controls.Add(Me.Panel1)
         Me.PeForm1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PeForm1.Font = New System.Drawing.Font("Segoe UI Semibold", 35.0!)
         Me.PeForm1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(160, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -42,6 +46,16 @@ Partial Class Home
         Me.PeForm1.TextGradTopScale = 1.0R
         Me.PeForm1.TextYOffset = 0
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Location = New System.Drawing.Point(245, 235)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(522, 293)
+        Me.Panel1.TabIndex = 0
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -53,8 +67,10 @@ Partial Class Home
         Me.Name = "Home"
         Me.Text = "Home"
         Me.TransparencyKey = System.Drawing.Color.Fuchsia
+        Me.PeForm1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents PeForm1 As ANgry7.PEForm
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
 End Class
